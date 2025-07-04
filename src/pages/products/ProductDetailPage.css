@@ -1,0 +1,215 @@
+/* ProductDetailPage.css */
+
+.product-detail-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  background: #F8F5F0;
+  border-radius: 1.5rem;
+}
+
+/* Image container styling */
+.img-container {
+  overflow: hidden;
+  background: #FAF6F1;
+  border-radius: 1.2rem;
+}
+
+.img-container img {
+  transition: transform 0.3s ease;
+}
+
+.img-container:hover img {
+  transform: scale(1.05);
+}
+
+/* Icon styling */
+.icon-detail {
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.icon-detail:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Card enhancements */
+.card,
+.card.shadow-lg {
+  background: #FAF6F1 !important;
+  border-radius: 1.5rem !important;
+  box-shadow: 0 4px 24px 0 rgba(164,144,124,0.10) !important;
+  border: none !important;
+}
+
+.card:hover,
+.card.shadow-lg:hover {
+  box-shadow: 0 8px 32px 0 rgba(164,144,124,0.18) !important;
+  transform: translateY(-4px) scale(1.01);
+}
+
+/* Button styling */
+.btn {
+  transition: all 0.3s ease;
+  border-radius: 0.5rem;
+}
+
+.btn-primary,
+.btn-primary:focus {
+  background: #A4907C !important;
+  border: none !important;
+  color: #fff !important;
+}
+
+.btn-primary:hover {
+  background: #8B6F3A !important;
+  color: #fff !important;
+}
+
+.btn-success,
+.btn-success:focus {
+  background: #4E944F !important;
+  border: none !important;
+  color: #fff !important;
+}
+
+.btn-success:hover {
+  background: #41753B !important;
+  color: #fff !important;
+}
+
+.btn-outline-primary,
+.btn-outline-primary:focus {
+  border-color: #A4907C !important;
+  color: #A4907C !important;
+  background: transparent !important;
+}
+
+.btn-outline-primary:hover {
+  background: #A4907C !important;
+  color: #fff !important;
+}
+
+.btn-group .btn,
+.btn-group .btn:disabled {
+  border-color: #A4907C !important;
+  color: #A4907C !important;
+  background: #F8F5F0 !important;
+}
+
+.btn-group .btn:hover:not(:disabled) {
+  background: #A4907C !important;
+  color: #fff !important;
+}
+
+/* Badge styling */
+.badge,
+.badge.bg-light {
+  background: #F8F5F0 !important;
+  color: #6B4F27 !important;
+  border: 1px solid #E9D5B4 !important;
+}
+
+/* Price styling */
+.text-success {
+  color: #4E944F !important;
+}
+
+/* Alert styling */
+.alert {
+  background: #FAF6F1 !important;
+  color: #6B4F27 !important;
+  border: 1px solid #E9D5B4 !important;
+}
+
+/* Animation keyframes */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .product-detail-container {
+    padding: 1rem;
+  }
+  
+  .display-6 {
+    font-size: 1.5rem;
+  }
+  
+  .h3 {
+    font-size: 1.25rem;
+  }
+  
+  .btn-lg {
+    padding: 0.75rem 1.5rem;
+  }
+  
+  .icon-detail {
+    padding: 6px;
+  }
+}
+
+/* Loading spinner styling */
+.spinner-border-lg {
+  width: 3rem;
+  height: 3rem;
+}
+
+/* Quantity button group */
+.btn-group .btn:disabled {
+  opacity: 0.6;
+}
+
+/* Size selection buttons */
+.btn.rounded-pill {
+  border-radius: 2rem !important;
+  min-width: 100px;
+}
+
+/* Product features section */
+.d-flex.flex-wrap.gap-3 > * {
+  margin-bottom: 0.5rem;
+}
+
+/* Smooth transitions for all interactive elements */
+* {
+  transition: all 0.3s ease;
+}
+
+/* Hover effects for cards */
+.shadow-lg:hover {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
+/* Custom scrollbar for mobile */
+@media (max-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 2px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
+
+/* End bakery theme overrides */

@@ -1,0 +1,90 @@
+/* Bakery Premium Theme for Register Form */
+
+.register-form-bg {
+  background: #F8F5F0;
+  min-height: 100vh;
+}
+
+.register-card {
+  background: #8d7a67  !important;
+  border: none !important;
+  box-shadow: 0 4px 24px 0 rgba(164, 144, 124, 0.10), 0 1.5px 6px 0 rgba(139, 111, 58, 0.08);
+}
+
+.register-card .card-header {
+  background: #A4907C  !important;
+  color: #fff !important;
+  border-bottom: none;
+}
+
+.register-card .card-footer {
+  background: #F8F5F0 !important;
+  border-top: none;
+}
+
+.register-card .form-label, .register-card .form-label i {
+  color: #6B4F27 !important;
+}
+
+.register-card .form-control {
+  background: #fff;
+  border: 1.5px solid #A4907C;
+  color: #6B4F27;
+  font-size: 1.08rem;
+}
+
+.register-card .form-control:focus {
+  border-color: #4E944F;
+  box-shadow: 0 0 0 0.15rem rgba(78, 148, 79, 0.15);
+}
+
+.register-card .form-text {
+  color: #8B6F3A !important;
+}
+
+.register-card .btn-success {
+  background: #4E944F !important;
+  border: none !important;
+  color: #fff !important;
+  transition: background 0.2s;
+}
+
+.register-card .btn-success:hover, .register-card .btn-success:focus {
+  background: #8B6F3A !important;
+  color: #fff !important;
+}
+
+.register-card .btn-outline-secondary {
+  border-color: #A4907C;
+  color: #6B4F27;
+  background: #fff;
+}
+
+.register-card .btn-outline-secondary:hover, .register-card .btn-outline-secondary:focus {
+  background: #A4907C;
+  color: #fff;
+}
+
+.register-card .alert-success {
+  background: #eafbe7;
+  color: #4E944F;
+  border: none;
+}
+
+.register-card .alert-danger {
+  background: #fff3e6;
+  color: #8B6F3A;
+  border: none;
+}
+
+.register-card .form-control.is-invalid {
+  border-color: #8B6F3A;
+}
+
+.register-card .form-control.is-valid {
+  border-color: #4E944F;
+}
+
+.register-card .rounded-circle {
+  border: 2px solid #A4907C;
+}

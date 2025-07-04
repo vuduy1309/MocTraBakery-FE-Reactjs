@@ -1,0 +1,85 @@
+/* Bakery Premium Theme for Cart Page */
+
+.cart-page-bg {
+  background: #F8F5F0;
+  min-height: 100vh;
+}
+
+.cart-card {
+  background: #FAF6F1 !important;
+  border: none !important;
+  box-shadow: 0 4px 24px 0 rgba(164, 144, 124, 0.10), 0 1.5px 6px 0 rgba(139, 111, 58, 0.08);
+  border-radius: 18px;
+}
+
+.cart-table {
+  background: transparent;
+  color: #6B4F27;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.cart-table th {
+  background: #A4907C;
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  font-size: 1.08rem;
+}
+
+.cart-table td {
+  background: #FAF6F1;
+  color: #6B4F27;
+  border: none;
+  vertical-align: middle;
+}
+
+.cart-table tr {
+  transition: background 0.2s;
+}
+
+.cart-table tbody tr:hover {
+  background: #F3EDE4;
+}
+
+.cart-remove-btn {
+  background: #8B6F3A !important;
+  border: none !important;
+  color: #fff !important;
+  transition: background 0.2s;
+}
+
+.cart-remove-btn:hover, .cart-remove-btn:focus {
+  background: #A4907C !important;
+  color: #fff !important;
+}
+
+.cart-checkout-btn {
+  background: #4E944F !important;
+  border: none !important;
+  color: #fff !important;
+  transition: background 0.2s;
+}
+
+.cart-checkout-btn:hover, .cart-checkout-btn:focus {
+  background: #8B6F3A !important;
+  color: #fff !important;
+}
+
+.cart-total {
+  color: #8B6F3A;
+  font-weight: bold;
+  font-size: 1.18rem;
+}
+
+.cart-empty-alert, .cart-error-alert {
+  background: #fff3e6 !important;
+  color: #8B6F3A !important;
+  border: none !important;
+}
+
+.cart-info-alert {
+  background: #eafbe7 !important;
+  color: #4E944F !important;
+  border: none !important;
+}

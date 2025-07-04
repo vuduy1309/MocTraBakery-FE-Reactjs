@@ -1,0 +1,19 @@
+.main-footer {
+  background: #2ecc40;
+  color: #fff;
+  padding: 24px 0 12px 0;
+  text-align: center;
+  margin-top: 40px;
+}
+.footer-content {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+.footer-content a {
+  color: #fff;
+  text-decoration: underline;
+  margin: 0 4px;
+}
+.footer-content a:hover {
+  color: #333;
+}

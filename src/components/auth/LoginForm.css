@@ -1,0 +1,87 @@
+/* Bakery theme for LoginForm */
+.login-form-bg {
+  background: #F8F5F0;
+  border-radius: 1.5rem;
+}
+
+.login-card {
+  background: #FAF6F1 !important;
+  border-radius: 1.5rem !important;
+  box-shadow: 0 4px 24px 0 rgba(164,144,124,0.10) !important;
+  border: none !important;
+}
+
+.login-card .card-header {
+  background: #A4907C !important;
+  color: #fff !important;
+  border-radius: 1.5rem 1.5rem 0 0 !important;
+}
+
+.login-card .card-footer {
+  background: #F8F5F0 !important;
+  border-radius: 0 0 1.5rem 1.5rem !important;
+}
+
+.login-card .form-label {
+  color: #8B6F3A !important;
+}
+
+.login-card .form-control {
+  background: #F8F5F0 !important;
+  border: 1px solid #E9D5B4 !important;
+  color: #6B4F27 !important;
+}
+
+.login-card .form-control:focus {
+  border-color: #A4907C !important;
+  box-shadow: 0 0 0 0.2rem #A4907C22 !important;
+}
+
+.login-card .btn-primary {
+  background: #A4907C !important;
+  border: none !important;
+  color: #fff !important;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.login-card .btn-primary:hover {
+  background: #8B6F3A !important;
+  color: #fff !important;
+}
+
+.login-card .alert-success {
+  background: #F5FBEF !important;
+  color: #4E944F !important;
+  border: 1px solid #C7E5C7 !important;
+}
+
+.login-card .alert-danger {
+  background: #FFF3F3 !important;
+  color: #B94A48 !important;
+  border: 1px solid #F5C6CB !important;
+}
+
+.login-card .form-control.is-invalid {
+  border-color: #B94A48 !important;
+}
+
+.login-card .form-control.is-valid {
+  border-color: #4E944F !important;
+}
+
+.login-card .text-muted, .login-card .text-secondary {
+  color: #A4907C !important;
+}
+
+.login-card .fw-semibold {
+  font-weight: 600 !important;
+}
+
+.login-card .text-decoration-none.fw-semibold {
+  color: #A4907C !important;
+}
+
+.login-card .text-decoration-none.fw-semibold:hover {
+  color: #8B6F3A !important;
+}

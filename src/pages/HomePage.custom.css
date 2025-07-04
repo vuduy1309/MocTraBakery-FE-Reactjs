@@ -1,0 +1,100 @@
+/* HEADER */
+.header-soft-brown {
+  background: #FFF8F0 !important;
+}
+.text-soft-brown {
+  color: #8B4513 !important;
+}
+
+/* HERO SECTION */
+.bg-gradient-hero {
+  background: linear-gradient(90deg, #F5E6D3 0%, #FFF8DC 100%) !important;
+}
+.hero-title {
+  color: #8B4513 !important;
+}
+.hero-desc {
+  color: #A0522D !important;
+}
+.btn-order-now, .btn-order-now:active, .btn-order-now:focus, .btn-order-now:hover {
+  background: #4A7C59 !important;
+  color: #fff !important;
+  border: none !important;
+}
+.btn-learn-more, .btn-learn-more:active, .btn-learn-more:focus, .btn-learn-more:hover {
+  background: #fff !important;
+  color: #4A7C59 !important;
+  border: 2px solid #4A7C59 !important;
+}
+.hero-logo-bg {
+  background: #FEFEFE !important;
+}
+.hero-logo-text {
+  color: #6B4423 !important;
+}
+
+/* FEATURES SECTION */
+.features-section-bg {
+  background: #FEFCF8 !important;
+}
+.features-title {
+  color: #8B4513 !important;
+}
+.features-desc {
+  color: #706963 !important;
+}
+
+/* FEATURE CARDS */
+.feature-card-title {
+  color: #5D4037 !important;
+}
+.feature-card-desc {
+  color: #757575 !important;
+}
+.feature-icon-leaf {
+  color: #4A7C59 !important;
+}
+.feature-icon-heart {
+  color: #E57373 !important;
+}
+.feature-icon-ship {
+  color: #64B5F6 !important;
+}
+.feature-icon-store {
+  color: #FFB74D !important;
+}
+/* Header nhạt màu nâu */
+.header-soft-brown {
+  background: #e9d5b4 !important;
+  /* beige trung tính, rất hợp với phong cách bakery hiện đại */
+}
+.text-soft-brown {
+  color: #7c5a32 !important;
+}
+.homepage {
+  background: #fdf6ee;
+}
+.bg-soft-beige {
+  background: #fdf6ee !important;
+}
+.text-soft-beige {
+  color: #a67c52 !important;
+}
+.bg-gradient-soft-beige {
+  background: linear-gradient(90deg, #f5e3c2 0%, #e7cba0 100%) !important;
+}
+.bg-white-beige {
+  background: #fffaf3 !important;
+}
+.btn-soft-beige, .btn-soft-beige:active, .btn-soft-beige:focus, .btn-soft-beige:hover {
+  background: #fbead1 !important;
+  color: #a67c52 !important;
+  border: none !important;
+}
+.bg-gradient-warning {
+  background: linear-gradient(90deg, #fffde7 0%, #ffe082 100%) !important;
+  color: #795548 !important;
+}
+.card, .feature-card {
+  background: #fffaf3 !important;
+}

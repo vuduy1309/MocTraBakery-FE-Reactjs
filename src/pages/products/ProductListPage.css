@@ -1,0 +1,348 @@
+/* Filter button full width */
+.product-list-page .w-100.btn {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+}
+
+/* Price input small text */
+.product-list-page small.text-muted {
+  font-size: 0.75rem;
+  display: block;
+  text-align: center;
+  margin-top: 0.25rem;
+}/* ProductListPage.css */
+
+.product-list-page {
+  background: linear-gradient(135deg, #f8f9ff 0%, #e3f2fd 100%);
+  min-height: 100vh;
+}
+
+/* Hover effect cho product cards */
+.product-card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Custom input focus states */
+.form-control:focus,
+.form-select:focus {
+  border-color: #A4907C;
+  box-shadow: 0 0 0 0.25rem rgba(164, 144, 124, 0.15);
+  background-color: #fff;
+}
+
+/* Header icon animation */
+.product-list-page .fa-store {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Custom spinner */
+.spinner-border {
+  border-width: 3px;
+}
+
+/* Badge styling */
+.badge {
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* Card enhancements */
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.card-body {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+}
+
+/* Sidebar filter styling */
+.sticky-top {
+  z-index: 1020;
+}
+
+/* Filter card specific styling */
+.product-list-page .card .card-header {
+  background: linear-gradient(135deg, #A4907C22 0%, #FAF6F1 100%);
+}
+
+/* Filter form elements */
+.product-list-page .form-select,
+.product-list-page .form-control {
+  background-color: #fff;
+  border: 1px solid #D4C4B0;
+  transition: all 0.3s ease;
+}
+
+.product-list-page .form-select:hover,
+.product-list-page .form-control:hover {
+  border-color: #A4907C;
+  background-color: #FEFCF8;
+}
+
+.product-list-page .form-select:focus,
+.product-list-page .form-control:focus {
+  border-color: #A4907C;
+  box-shadow: 0 0 0 0.25rem rgba(164, 144, 124, 0.15);
+  background-color: #fff;
+}
+
+/* Category radio buttons */
+.category-radio .form-check-input {
+  border-color: #D4C4B0;
+}
+
+.category-radio .form-check-input:checked {
+  background-color: #A4907C;
+  border-color: #A4907C;
+}
+
+.category-radio .form-check-input:focus {
+  border-color: #A4907C;
+  box-shadow: 0 0 0 0.25rem rgba(164, 144, 124, 0.15);
+}
+
+.category-radio .form-check-label {
+  color: #6B4F27;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.category-radio .form-check-label:hover {
+  color: #A4907C;
+}
+
+.category-radio .form-check-input:checked + .form-check-label {
+  color: #A4907C;
+  font-weight: 600;
+}
+
+/* Price input styling */
+.product-list-page .form-control[type="number"] {
+  text-align: center;
+}
+
+.product-list-page .form-control[type="number"]:focus {
+  text-align: left;
+}
+
+/* Price range separator */
+.product-list-page .row .col-auto span {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Button hover effects */
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn-outline-secondary {
+  transition: all 0.3s ease;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #A4907C;
+  border-color: #A4907C;
+  color: #fff;
+}
+
+/* Alert styling */
+.alert {
+  border-radius: 12px;
+  border: none;
+}
+
+.alert-danger {
+  background: linear-gradient(135deg, #fff5f5 0%, #fed7d7 100%);
+  color: #c53030;
+}
+
+/* Input group styling */
+.input-group-text {
+  border-radius: 8px 0 0 8px;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  border-color: #D4C4B0;
+}
+
+.form-control,
+.form-select {
+  border-radius: 0 8px 8px 0;
+}
+
+.form-control:first-child,
+.form-select:first-child {
+  border-radius: 8px 0 0 8px;
+}
+
+.form-control:last-child,
+.form-select:last-child {
+  border-radius: 0 8px 8px 0;
+}
+
+/* Sidebar icons */
+.product-list-page .card-header .fas,
+.product-list-page .form-label .fas {
+  width: 16px;
+  text-align: center;
+}
+
+/* Filter section spacing */
+.product-list-page .card-body > div:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+/* Responsive improvements */
+@media (max-width: 991.98px) {
+  /* Stack sidebar below search on mobile */
+  .sticky-top {
+    position: relative !important;
+    top: auto !important;
+  }
+  
+  /* Adjust product grid for mobile */
+  .product-card-hover:hover {
+    transform: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 2.5rem;
+  }
+  
+  .input-group-lg .form-control,
+  .input-group-lg .form-select {
+    font-size: 1rem;
+  }
+  
+  /* Mobile filter adjustments */
+  .card-header h5 {
+    font-size: 1.1rem;
+  }
+  
+  .form-label {
+    font-size: 0.9rem;
+  }
+}
+
+/* Loading animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.product-list-page .row {
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Custom scrollbar cho select */
+.form-select {
+  cursor: pointer;
+}
+
+/* Border radius cho form elements */
+.form-control,
+.form-select,
+.btn {
+  border-radius: 8px;
+}
+
+/* Shadow effects */
+.shadow-sm {
+  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Empty state styling */
+.fa-box-open {
+  opacity: 0.6;
+}
+
+/* Results summary */
+.border-top {
+  border-color: #e9ecef !important;
+}
+
+/* Filter badge trong sidebar */
+.product-list-page .badge {
+  font-size: 0.8rem;
+  padding: 0.5rem 1rem;
+}
+
+/* Hover effect cho filter cards */
+.product-list-page .card:hover {
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Search card special styling */
+.product-list-page .input-group-lg .input-group-text {
+  padding: 0.75rem 1rem;
+}
+
+.product-list-page .input-group-lg .form-control {
+  padding: 0.75rem 1rem;
+}
+
+/* Sidebar responsive behavior */
+@media (max-width: 991.98px) {
+  .product-list-page .sticky-top {
+    margin-bottom: 2rem;
+  }
+}
+
+/* Category list styling */
+.category-list {
+  max-height: 300px;
+  overflow-y: auto;
+  padding: 0.5rem;
+  background-color: #FEFCF8;
+  border-radius: 8px;
+  border: 1px solid #F0E6D2;
+}
+
+.category-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.category-list::-webkit-scrollbar-track {
+  background: #FAF6F1;
+  border-radius: 3px;
+}
+
+.category-list::-webkit-scrollbar-thumb {
+  background: #D4C4B0;
+  border-radius: 3px;
+}
+
+.category-list::-webkit-scrollbar-thumb:hover {
+  background: #A4907C;
+}

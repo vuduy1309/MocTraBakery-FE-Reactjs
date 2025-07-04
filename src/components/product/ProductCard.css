@@ -1,0 +1,97 @@
+/* ProductCard.css */
+
+.product-card {
+  transition: all 0.3s ease;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+.product-card .card-img-top {
+  transition: transform 0.3s ease;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+/* Quick add animation */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Badge styling */
+.product-card .badge {
+  font-size: 0.7rem;
+  border-radius: 0.5rem;
+}
+
+/* Price styling */
+.product-card .text-success {
+  color: #198754 !important;
+}
+
+/* Button styling */
+.product-card .btn {
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.product-card .btn-outline-primary:hover {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-color: transparent;
+}
+
+/* Favorite button */
+.product-card .btn-sm.rounded-circle {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.product-card .btn-sm.rounded-circle:hover {
+  transform: scale(1.1);
+}
+
+/* Product features icons */
+.product-card .card-body span[title] {
+  cursor: help;
+}
+
+/* Rating stars */
+.product-card .text-warning {
+  color: #ffc107 !important;
+}
+
+/* Responsive adjustments for product cards */
+@media (max-width: 576px) {
+  .product-card .card-body {
+    padding: 1rem;
+  }
+  
+  .product-card .card-title {
+    font-size: 0.9rem;
+  }
+  
+  .product-card .btn {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+  }
+}
