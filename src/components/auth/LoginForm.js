@@ -82,6 +82,14 @@ function LoginForm() {
     setLoading(false);
   };
 
+  // Hàm đăng nhập demo
+  const handleDemoLogin = (email) => {
+    setForm({ email, password: '123123' });
+    setTimeout(() => {
+      document.querySelector('form').dispatchEvent(new Event('submit', { cancelable: true, bubbles: true }));
+    }, 100);
+  };
+
   return (
     <Container fluid className="login-form-bg p-0 m-0" style={{ height: '100%', minWidth: '100vw', display: 'block', paddingTop: 0, paddingBottom: 0 }}>
       <Row className="justify-content-center w-100 m-0" style={{ height: '100%' }}>
@@ -109,6 +117,38 @@ function LoginForm() {
                   </div>
                 </Alert>
               )}
+
+              {/* Demo accounts */}
+              <div className="mb-4">
+                <div className="fw-semibold mb-2">Tài khoản demo:</div>
+                <div className="d-flex flex-wrap gap-2">
+                  <Button
+                    variant="outline-secondary"
+                    size="sm"
+                    onClick={() => handleDemoLogin('admin@gmail.com')}
+                    disabled={loading}
+                  >
+                    admin@gmail.com
+                  </Button>
+                  <Button
+                    variant="outline-secondary"
+                    size="sm"
+                    onClick={() => handleDemoLogin('quanly@gmail.com')}
+                    disabled={loading}
+                  >
+                    quanly@gmail.com
+                  </Button>
+                  <Button
+                    variant="outline-secondary"
+                    size="sm"
+                    onClick={() => handleDemoLogin('khachhang1@gmail.com')}
+                    disabled={loading}
+                  >
+                    khachhang1@gmail.com
+                  </Button>
+                </div>
+              </div>
+              {/* End demo accounts */}
 
               <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3">

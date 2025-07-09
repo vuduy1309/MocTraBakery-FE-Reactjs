@@ -101,15 +101,17 @@ function Header() {
         </Navbar.Brand>
 
         {/* Navigation */}
-        <Nav className="mx-auto">
+        <Nav className="mx-auto flex-nowrap align-items-center" style={{ gap: 8, whiteSpace: 'nowrap', overflowX: 'auto', maxWidth: '60vw' }}>
           <Nav.Link
             as={Link}
             to="/"
-            className="px-4 fw-medium text-dark position-relative"
+            className="px-3 fw-medium text-dark position-relative flex-shrink-0"
             style={{
               fontSize: '1rem',
               transition: 'all 0.3s ease',
               borderRadius: '8px',
+              minWidth: 120,
+              textAlign: 'center',
             }}
             onMouseEnter={(e) => {
               e.target.style.color = '#4A7C59';
@@ -126,11 +128,13 @@ function Header() {
           <Nav.Link
             as={Link}
             to="/products"
-            className="px-4 fw-medium text-dark"
+            className="px-3 fw-medium text-dark flex-shrink-0"
             style={{
               fontSize: '1rem',
               transition: 'all 0.3s ease',
               borderRadius: '8px',
+              minWidth: 120,
+              textAlign: 'center',
             }}
             onMouseEnter={(e) => {
               e.target.style.color = '#4A7C59';
@@ -145,13 +149,15 @@ function Header() {
             Sản phẩm
           </Nav.Link>
           <Nav.Link
-            className="px-4 fw-medium text-dark"
+            className="px-3 fw-medium text-dark flex-shrink-0"
             style={{
               fontSize: '1rem',
               transition: 'all 0.3s ease',
               borderRadius: '8px',
               cursor: 'not-allowed',
               opacity: 0.7,
+              minWidth: 120,
+              textAlign: 'center',
             }}
             title="Coming soon"
             onClick={(e) => {
@@ -173,11 +179,13 @@ function Header() {
           <Nav.Link
             as={Link}
             to="/cart"
-            className="px-4 fw-medium text-dark"
+            className="px-3 fw-medium text-dark flex-shrink-0"
             style={{
               fontSize: '1rem',
               transition: 'all 0.3s ease',
               borderRadius: '8px',
+              minWidth: 120,
+              textAlign: 'center',
             }}
             onMouseEnter={(e) => {
               e.target.style.color = '#4A7C59';
@@ -197,12 +205,15 @@ function Header() {
               <Nav.Link
                 as={Link}
                 to={user.role === 'Admin' ? '/admin' : '/manager/dashboard'}
-                className={`px-4 fw-medium text-dark`}
+                className={`px-3 fw-medium text-dark flex-shrink-0`}
                 style={{
                   fontSize: '1rem',
                   transition: 'all 0.3s ease',
                   borderRadius: '8px',
                   fontWeight: 600,
+                  minWidth: 160,
+                  textAlign: 'center',
+                  whiteSpace: 'nowrap',
                 }}
                 onMouseEnter={(e) => {
                   e.target.style.color = '#fff';

@@ -9,7 +9,8 @@ function CheckoutPage() {
   const location = useLocation();
   // Nếu là mua ngay thì cart.items sẽ chỉ có 1 sản phẩm, và có cờ buyNow
   const cart = location.state?.cart;
-  const [paymentMethod, setPaymentMethod] = useState('cod');
+  // Đặt mặc định là vnpay
+  const [paymentMethod, setPaymentMethod] = useState('vnpay');
   const [loading, setLoading] = useState(false);
   const [msg, setMsg] = useState('');
   const [error, setError] = useState('');
@@ -235,6 +236,19 @@ function CheckoutPage() {
 
                 {/* Form thanh toán */}
                 <Form onSubmit={handleOrder}>
+                  {/* Link lấy tài khoản thử nghiệm VNPAY */}
+                  <div className="mb-4">
+                    <a
+                      href="https://sandbox.vnpayment.vn/apis/vnpay-demo/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="fw-bold text-primary text-decoration-underline"
+                      style={{ fontSize: '1rem' }}
+                    >
+                      Lấy tài khoản thử nghiệm VNPAY tại đây
+                      <i className="fas fa-external-link-alt ms-2"></i>
+                    </a>
+                  </div>
                   <div className="mb-4">
                     <Form.Label className="fw-bold fs-5 mb-3" style={{ color: '#6B4F27' }}>
                       <i className="fas fa-map-marker-alt me-2"></i>
