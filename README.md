@@ -43,10 +43,6 @@ cd MocTraBakery-FE-Reactjs
 # Install dependencies
 npm install
 
-# Create .env file
-echo "REACT_APP_API_URL=http://localhost:3000/api" > .env
-echo "REACT_APP_SOCKET_URL=http://localhost:3000" >> .env
-
 # Start the development server
 npm start
-The app will run at http://localhost:3000.
+The app will run at http://localhost:3001.
